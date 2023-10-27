@@ -1,0 +1,21 @@
+ALGORITHM somme
+VAR
+    phrase:=STRING;
+    nbrchar,nbrv,nbrw,i :=INTEGER
+BEGIN
+    write("give me phrase");
+    Read(phrase);
+    WHILE (phrase[i] <>"." ) DO
+        nbrchar:=+1
+    IF (phrase [i]="a" OR phrase[i]="e" OR phrase[i]="i" OR phrase[i]="u" OR phrase[i]="o"OR phrase[i] ="A" OR phrase[i]= "E" OR phrase[i]="I" OR phrase[i]="U" OR phrase[i]="O"  ) THEN
+    nbrv:=nbrv+1;
+    END_IF
+    IF (phrase[i]= "") THEN
+    nbrw:=nbrw+1;
+    END_IF
+    i:=i+1;
+END_WHILE
+    write ("number of vowls",nbrv);
+     write("number of charcter":,nbrchar);
+        write ("number of words",nbrw);
+END
